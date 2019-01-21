@@ -10,6 +10,7 @@ exports.addUser = (req, res) => {
 };
 
 exports.getUser = (req,res) => {
+    console.log(req.params.name)
     User.findOne({
          where:{
              username:req.params.name,
@@ -18,6 +19,7 @@ exports.getUser = (req,res) => {
          }
     })
         .then((result) => {
+            console.log({result})
             if(!result){
                 res.status(404).send( "Users not exist")
             }else{
