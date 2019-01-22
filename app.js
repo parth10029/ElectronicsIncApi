@@ -4,6 +4,9 @@ var path = require('path');
 var bodyParser=require('body-parser')
 var usersRouter = require('./App/routes/userRoutes');
 var categoryRouter = require('./App/routes/categoryRoutes');
+var sub_productRouter = require('./App/routes/sub_productRoutes');
+var product = require('./App/routes/productRoutes');
+
 var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +29,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+
+
+app.use(express.static(path.join(__dirname, 'image/categoryImage')));
+app.use(express.static(path.join(__dirname, 'image/productimage')));
+app.use(express.static(path.join(__dirname, 'image/subcatimage')));
+
+
 app.get('/test', (req, res, next)=>{
   console.log("call Test")
   res.send('Connected......');
@@ -34,6 +44,9 @@ app.get('/test', (req, res, next)=>{
 
 app.use('/', usersRouter);
 app.use('/', categoryRouter);
+app.use('/', sub_productRouter);
+app.use('/', product);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -58,6 +71,7 @@ app.use(function(err, req, res, next) {
 //
 // var user = require('./app/routes/users');//importing route
 // user(app);
+
 
 app.listen(5000, (err, res) => {
   if(err){

@@ -1,12 +1,25 @@
 const product=require('../schema/productschema');
 
 exports.addproduct = (req, res) => {
-    product.create(req.body)
-        .then((data) =>{
-            res.send(data);
-        }).catch((err)=>{
-        res.send(err)
-    })
+    if(res) {
+        const {body:{product_name,image,sub_product_id,price,detail,created_by,deleted_by,updated_by}} = req;
+        let newproduct= {
+            product_name: product_name,
+            image: req.file && req.file.filename,
+            price,
+            detail,
+            sub_product_id,
+            created_by,
+            deleted_by,
+            updated_by,
+        };
+        product.create(newproduct)
+            .then((product) => res.send({product}))
+            .catch((error) => {
+                console.log("error")
+                return res.status(500).send(error)
+            });
+    }
 };
 
 exports.getproduct = (req,res) => {
@@ -20,7 +33,7 @@ exports.getproduct = (req,res) => {
             if(!result){
                 res.status(404).send( "product does not exist")
             }else{
-                res.status(200).send( "product exist")
+                res.status(200).send(result)
             }
         }).catch((err) => {
         res.send("hello")

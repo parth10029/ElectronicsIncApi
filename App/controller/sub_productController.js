@@ -1,26 +1,36 @@
 const subproduct=require('../schema/sub_productschema');
 
 exports.addsubproduct = (req, res) => {
-    subproduct.create(req.body)
-        .then((data) =>{
-            res.send(data);
-        }).catch((err)=>{
-        res.send(err)
-    })
+    if(res) {
+        const {body:{name,image,cat_id}} = req;
+        let newsubCategory= {
+            name,
+            image: req.file && req.file.filename,
+            cat_id,
+        };
+        subproduct.create(newsubCategory)
+            .then((sub_product) => res.send({sub_product}))
+            .catch((error) => {
+                console.log("error")
+                return res.status(500).send(error)
+            });
+    }
 };
 
 exports.getsubproduct = (req,res) => {
-    subproduct.findOne({
-        where:{
-            product_name:req.body.product_name,
-            is_active:1
-        }
-    })
+    subproduct.findAll(
+    //     {
+    //     where:{
+    //         //name:req.body.name,
+    //         is_active:1
+    //     }
+    // }
+    )
         .then((result) => {
             if(!result){
                 res.status(404).send( "product does not exist")
             }else{
-                res.status(200).send( "product exist")
+                res.status(200).send(result)
             }
         }).catch((err) => {
         res.send("hello")

@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="998b80eb-2013-431b-98cc-b0f2d0cd3c32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/controller/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/controller/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/controller/productController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/controller/sub_productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/controller/sub_productController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/routes/productRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/routes/sub_productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/routes/sub_productRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/schema/productschema.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/schema/productschema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/schema/sub_productschema.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/schema/sub_productschema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,10 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/schema/productschema.js">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="277">
+              <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -46,16 +53,9 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/App/schema/product.js" />
-        <option value="$PROJECT_DIR$/App/schema/sub_productschema.js" />
-        <option value="$PROJECT_DIR$/App/schema/productschema.js" />
-        <option value="$PROJECT_DIR$/App/controller/productController.js" />
-        <option value="$PROJECT_DIR$/App/controller/sub_productController.js" />
-        <option value="$PROJECT_DIR$/App/routes/sub_productRoutes.js" />
-        <option value="$PROJECT_DIR$/App/routes/productRoutes.js" />
         <option value="$PROJECT_DIR$/App/schema/user.js" />
         <option value="$PROJECT_DIR$/App/schema/multer.js" />
         <option value="$PROJECT_DIR$/App/controller/multerController.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/App/config/multer.js" />
         <option value="$PROJECT_DIR$/App/routes/multerRoutes.js" />
         <option value="$PROJECT_DIR$/App/schema/categoryschema.js" />
@@ -63,6 +63,13 @@
         <option value="$PROJECT_DIR$/App/routes/categoryRoutes.js" />
         <option value="$PROJECT_DIR$/App/controller/categoryController.js" />
         <option value="$PROJECT_DIR$/App/controller/userController.js" />
+        <option value="$PROJECT_DIR$/App/schema/sub_productschema.js" />
+        <option value="$PROJECT_DIR$/App/routes/sub_productRoutes.js" />
+        <option value="$PROJECT_DIR$/App/controller/sub_productController.js" />
+        <option value="$PROJECT_DIR$/App/routes/productRoutes.js" />
+        <option value="$PROJECT_DIR$/App/controller/productController.js" />
+        <option value="$PROJECT_DIR$/App/schema/productschema.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -73,10 +80,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
-    <option name="y" value="41" />
-    <option name="width" value="1048" />
-    <option name="height" value="675" />
+    <option name="y" value="44" />
+    <option name="width" value="1366" />
+    <option name="height" value="654" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -84,7 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,10 +102,16 @@
               <item name="ElectronicsIncApi" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ElectronicsIncApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ElectronicsIncApi" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,14 +179,16 @@
       <workItem from="1547787132803" duration="8823000" />
       <workItem from="1547872992780" duration="8738000" />
       <workItem from="1548045870469" duration="9935000" />
+      <workItem from="1548075656658" duration="177000" />
+      <workItem from="1548141165086" duration="10969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44898000" />
+    <option name="totallyTimeSpent" value="56044000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1366" height="675" extended-state="6" />
+    <frame x="0" y="33" width="1366" height="675" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18364312" />
@@ -206,13 +219,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/sequelize/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/routes/sub_productRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/config/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -230,86 +236,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/routes/multerRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/App/routes/multerRoutes.js" />
     <entry file="file://$PROJECT_DIR$/image/categoryImage/1547898254383.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/config/multer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/multerController.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/productController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/sub_productController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/schema/sub_productschema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/routes/productRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/App/controller/multerController.js" />
     <entry file="file://$PROJECT_DIR$/App/schema/categoryschema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/categoryController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/routes/categoryRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="-131">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/controller/userController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-126">
           <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/routes/categoryRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/controller/categoryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/config/multer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/routes/sub_productRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="89" lean-forward="true" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/controller/sub_productController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -320,17 +297,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/schema/user.js">
+    <entry file="file://$PROJECT_DIR$/App/schema/productschema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="375">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/schema/productschema.js">
+    <entry file="file://$PROJECT_DIR$/App/schema/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="75">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/schema/sub_productschema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/controller/productController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/routes/productRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
         </state>
       </provider>
     </entry>
