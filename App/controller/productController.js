@@ -22,10 +22,28 @@ exports.addproduct = (req, res) => {
     }
 };
 
-exports.getproduct = (req,res) => {
-    product.findOne({
+exports.getproduct_subid = (req,res) => {
+    product.findAll({
         where:{
-            product_name:req.body.product_name,
+            sub_product_id:req.params.sub_product_id,
+            is_active:1
+        }
+    })
+        .then((result) => {
+            if(!result){
+                res.status(404).send( "product does not exist")
+            }else{
+                res.status(200).send(result)
+            }
+        }).catch((err) => {
+        res.send("hello")
+    })
+};
+
+exports.getproduct = (req,res) => {
+    product.findAll({
+        where:{
+            sub_product_id:req.params.id,
             is_active:1
         }
     })

@@ -17,14 +17,13 @@ exports.addsubproduct = (req, res) => {
     }
 };
 
-exports.getsubproduct = (req,res) => {
+exports.getsubproduct_byid = (req,res) => {
     subproduct.findAll(
-    //     {
-    //     where:{
-    //         //name:req.body.name,
-    //         is_active:1
-    //     }
-    // }
+        {
+        where:{
+            cat_id:req.params.id,
+        }
+    }
     )
         .then((result) => {
             if(!result){
