@@ -40,6 +40,25 @@ exports.getproduct_subid = (req,res) => {
     })
 };
 
+
+exports.getproductById = (req,res) => {
+    product.findAll({
+        where:{
+            id:req.params.id,
+            is_active:1
+        }
+    })
+        .then((result) => {
+            if(!result){
+                res.status(404).send( "product does not exist")
+            }else{
+                res.status(200).send(result)
+            }
+        }).catch((err) => {
+        res.send("hello")
+    })
+};
+
 exports.getproduct = (req,res) => {
     product.findAll({
         where:{
