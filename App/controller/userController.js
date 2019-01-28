@@ -51,7 +51,7 @@ exports.deleteUser = (req,res) => {
             }else{
                 result.update({is_active:0},{where:{id:req.params.id}})
                     .then((data)=>{
-                        res.status(200).send( "Users deleted")
+                        res.status(200).send( "User deleted")
                     }).catch((error)=>{
                         res.status(500).send("error")
                 })
